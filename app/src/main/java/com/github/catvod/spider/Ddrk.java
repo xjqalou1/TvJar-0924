@@ -524,7 +524,7 @@ public class Ddrk extends Spider {
     @Override
     public String searchContent(String key, boolean quick) {
         try {
-            String url = "https://www.google.com/search?q=site%3Addrk.tv+" + URLEncoder.encode(key);
+            String url = "https://谷歌.cf/search?q=site%3Addrk.tv+" + URLEncoder.encode(key);
             Document doc = Jsoup.parse(OkHttpUtil.string(url, getHeaders(url)));
             JSONObject result = new JSONObject();
             JSONArray videos = new JSONArray();
